@@ -92,15 +92,25 @@
             //Queue
 
             //UC1
-            Queue queue = new Queue();
-            queue.enqueueData(5);
-            queue.enqueueData(6);
-            queue.enqueueData(7);
-            queue.enqueueData(8);
-            queue.Display();
+            //Queue queue = new Queue();
+            //queue.enqueueData(5);
+            //queue.enqueueData(6);
+            //queue.enqueueData(7);
+            //queue.enqueueData(8);
+            //queue.Display();
 
             //UC2
-            stack.popData();
+            //queue.dequeueData();
+            //queue.Display();
+
+
+
+            //Stack
+            Stack stack = new Stack();
+            stack.pushData(1);
+            stack.pushData(2);
+            stack.pushData(3);
+            stack.pushData(4);
             stack.Display();
 
         }

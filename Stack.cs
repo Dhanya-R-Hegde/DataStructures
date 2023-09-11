@@ -23,6 +23,8 @@ namespace DataStructures
             Console.WriteLine("{0} is inserted into the stack", data);
         }
 
+        
+
         public void Display()
         {
             if (top == null)
@@ -32,11 +34,13 @@ namespace DataStructures
             else
             {
                 Node temp = top;
+                Console.Write("Peek ---> ");
                 while(temp != null)
                 {
-                    Console.WriteLine(temp.data + "  ");
+                    Console.Write(temp.data + "  ");
                     temp = temp.Next;
                 }
+                Console.WriteLine();
             }
         }
     }
