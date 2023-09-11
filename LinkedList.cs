@@ -12,8 +12,6 @@ namespace DataStructures
         private int size = 0;
         
 
-        
-
         public void AddNodeFirst(int data)
         {
             Node newNode = new Node(data);
@@ -29,6 +27,28 @@ namespace DataStructures
                 head = newNode;
 
             }
+            Console.WriteLine("{0} is inserted into the linkedlist", data);
+        }
+
+        public void AddNodeLast(int data)
+        {
+            Node newNode = new Node(data);
+            size++;
+
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                Node currentNode = head;
+                while (currentNode.Next != null)
+                {
+                    currentNode = currentNode.Next;
+                }
+                currentNode.Next = newNode;
+            }
+
             Console.WriteLine("{0} is inserted into the linkedlist", data);
         }
 
