@@ -52,6 +52,33 @@ namespace DataStructures
             Console.WriteLine("{0} is inserted into the linkedlist", data);
         }
 
+        public void InsertBetween(int data, int position)
+        {
+            Node newNode = new Node(data);
+            size++;
+
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else if (head.Next == null)
+            {
+                head.Next = newNode;
+            }
+            else
+            {
+                Node currentNode = head;
+                for (int i = 1; i < position - 1; i++)
+                {
+                    currentNode = currentNode.Next;
+                }
+                newNode.Next = currentNode.Next;
+                currentNode.Next = newNode;
+            }
+            Console.WriteLine("{0} is inserted into the linkedlist", data);
+
+        }
+
         public void Display()
         {
             if (head == null)

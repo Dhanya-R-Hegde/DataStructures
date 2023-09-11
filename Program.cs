@@ -27,6 +27,14 @@
             list3.AddNodeFirst(56);
             list3.AddNodeLast(30);
             list3.AddNodeLast(70);
+            list3.Display();
+
+            //UC4
+            LinkedList list4 = new LinkedList();
+            list4.AddNodeFirst(56);
+            list4.AddNodeLast(70);
+            list4.InsertBetween(30, 2);
+            list4.Display();
 
 
 
