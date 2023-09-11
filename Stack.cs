@@ -23,7 +23,19 @@ namespace DataStructures
             Console.WriteLine("{0} is inserted into the stack", data);
         }
 
-        
+        public void popData()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            else
+            {
+                Console.WriteLine("{0} is deleted from the stack", top.data);
+                top = top.Next;
+            }
+
+        }
 
         public void Display()
         {

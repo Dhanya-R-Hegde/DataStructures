@@ -100,23 +100,27 @@
             //queue.Display();
 
             //UC2
-<<<<<<< HEAD
-            queue.dequeueData();
-            queue.Display();
-=======
+
             //queue.dequeueData();
             //queue.Display();
 
-
-
+   
+            
+            
             //Stack
+
+            //UC1
             Stack stack = new Stack();
             stack.pushData(1);
             stack.pushData(2);
             stack.pushData(3);
             stack.pushData(4);
             stack.Display();
->>>>>>> Stack_UC1_PushData
+
+            //UC2
+            stack.popData();
+            stack.Display();
+
 
         }
     }
