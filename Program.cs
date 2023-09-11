@@ -36,7 +36,13 @@
             list4.InsertBetween(30, 2);
             list4.Display();
 
-
+            //UC5
+            LinkedList list5 = new LinkedList();
+            list5.AddNodeFirst(56);
+            list5.AddNodeLast(70);
+            list5.InsertBetween(30, 2);
+            list5.DeleteFirst();
+            list5.Display();
 
         }
     }

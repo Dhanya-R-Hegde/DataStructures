@@ -79,6 +79,20 @@ namespace DataStructures
 
         }
 
+        public void DeleteFirst()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+                return;
+            }
+            else
+            {
+                size--;
+                head = head.Next;
+            }
+        }
+
         public void Display()
         {
             if (head == null)
