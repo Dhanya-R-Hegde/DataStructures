@@ -118,6 +118,36 @@ namespace DataStructures
             }
         }
 
+        public int SearchElement(int value)
+        {
+            Node currentNode = head;
+            int index = -1;
+            int found = 0;
+
+            if (currentNode == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+            }
+            else
+            {
+                while (currentNode != null)
+                {
+                    index++;
+                    if (currentNode.data == value)
+                    {
+                        found++;
+                        break;
+                    }
+                    currentNode = currentNode.Next;
+                }
+                if (found == 1)
+                {
+                    return index;
+                }
+            }
+            return -1;
+        }
+
         public void Display()
         {
             if (head == null)

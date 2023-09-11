@@ -51,6 +51,22 @@
             list6.InsertBetween(30, 2);
             list6.DeleteLast();
             list6.Display();
+
+            //UC7
+            LinkedList list7 = new LinkedList();
+            list7.AddNodeFirst(56);
+            list7.AddNodeLast(70);
+            list7.InsertBetween(30, 2);
+            list7.Display();
+            if(list7.SearchElement(30) > -1)
+            {
+                Console.WriteLine("The element is found at index = " + list7.SearchElement(30));
+            }
+            else
+            {
+                Console.WriteLine("The element is not found in the LinkedList");
+            }
+
         }
     }
 }
