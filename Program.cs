@@ -44,6 +44,13 @@
             list5.DeleteFirst();
             list5.Display();
 
+            //UC6
+            LinkedList list6 = new LinkedList();
+            list6.AddNodeFirst(56);
+            list6.AddNodeLast(70);
+            list6.InsertBetween(30, 2);
+            list6.DeleteLast();
+            list6.Display();
         }
     }
 }

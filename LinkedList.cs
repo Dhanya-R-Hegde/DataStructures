@@ -93,6 +93,31 @@ namespace DataStructures
             }
         }
 
+        public void DeleteLast()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("This list is empty");
+            }
+            else if (head.Next == null)
+            {
+                head = null;
+                size--;
+            }
+            else
+            {
+                Node secondLastNode = head;
+                Node lastNode = head.Next;
+                while (lastNode.Next != null)
+                {
+                    secondLastNode = lastNode;
+                    lastNode = lastNode.Next;
+                }
+                secondLastNode.Next = null;
+                size--;
+            }
+        }
+
         public void Display()
         {
             if (head == null)
