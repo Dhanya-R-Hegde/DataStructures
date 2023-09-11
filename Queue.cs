@@ -27,6 +27,8 @@ namespace DataStructures
             }
         }
 
+        
+
         public void Display()
         {
             if(Front == null)
@@ -37,11 +39,13 @@ namespace DataStructures
             else
             {
                 Node temp = Front;
+                Console.Write("Front--->");
                 while (temp != null)
                 {
-                    Console.WriteLine(temp.data + "  ");
+                    Console.Write(temp.data + "--->");
                     temp = temp.Next;
-                } 
+                }
+                Console.WriteLine("Rear");
             }
         }
     }

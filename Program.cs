@@ -4,6 +4,9 @@
     {
         static void Main(string[] args) 
         {
+
+            //Linked List
+
             //UC1
             //LinkedList<int> list1 = new LinkedList<int>();
             //list1.AddFirst(30);
@@ -76,14 +79,25 @@
             //list8.Display();
 
             //UC9
-            LinkedList list9 = new LinkedList();
-            list9.AddNodeLast(56);
-            list9.AddNodeLast(30);
-            list9.AddNodeLast(70);
-            list9.InsertAfter(40, 30);
-            list9.Display();
-            list9.DeleteNode(40);
-            list9.Display();
+            //LinkedList list9 = new LinkedList();
+            //list9.AddNodeLast(56);
+            //list9.AddNodeLast(30);
+            //list9.AddNodeLast(70);
+            //list9.InsertAfter(40, 30);
+            //list9.Display();
+            //list9.DeleteNode(40);
+            //list9.Display();
+
+
+            //Queue
+
+            //UC1
+            Queue queue = new Queue();
+            queue.enqueueData(5);
+            queue.enqueueData(6);
+            queue.enqueueData(7);
+            queue.enqueueData(8);
+            queue.Display();
 
             
         }
