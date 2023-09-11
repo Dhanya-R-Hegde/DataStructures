@@ -27,7 +27,24 @@ namespace DataStructures
             }
         }
 
-        
+        public void dequeueData()
+        {
+            if (Front == null)
+            {
+                Console.WriteLine("The Queue is empty");
+            }
+            else
+            {
+                Node currentNode = Front;
+                Node nextNode = Front.Next;
+                while (nextNode.Next != null)
+                {
+                    currentNode = nextNode;
+                    nextNode = nextNode.Next;
+                }
+                currentNode.Next = null;
+            }
+        }
 
         public void Display()
         {

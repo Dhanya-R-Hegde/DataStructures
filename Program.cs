@@ -99,7 +99,10 @@
             queue.enqueueData(8);
             queue.Display();
 
-            
+            //UC2
+            stack.popData();
+            stack.Display();
+
         }
     }
 }
