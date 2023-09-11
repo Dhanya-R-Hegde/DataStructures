@@ -169,6 +169,27 @@ namespace DataStructures
 
         }
 
+        public void DeleteNode(int data)
+        {
+            Console.WriteLine("Size of the LinkedList before deleting the node is " + size);
+            int index = SearchElement(data); 
+            if (index > -1)
+            {
+               
+                Node currentNode = head;
+                Node nextNode = head.Next;
+                for(int i=0; i<index-1; i++)
+                {
+                    currentNode = currentNode.Next;
+                    nextNode = nextNode.Next;
+                }
+                currentNode.Next = nextNode.Next;
+                size--;
+
+                Console.WriteLine("Size of the LinkedList after deleting the node is " + size);
+            }
+        }
+
         public void Display()
         {
             if (head == null)
