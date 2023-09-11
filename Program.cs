@@ -100,8 +100,8 @@
             queue.Display();
 
             //UC2
-            stack.popData();
-            stack.Display();
+            queue.dequeueData();
+            queue.Display();
 
         }
     }
