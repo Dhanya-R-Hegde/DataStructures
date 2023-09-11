@@ -148,6 +148,27 @@ namespace DataStructures
             return -1;
         }
 
+        public void InsertAfter(int data, int value)
+        {
+            Node newNode = new Node(data);
+            size++;
+
+            int index = SearchElement(value);
+
+            if (index != -1)
+            {
+                Node currentNode = head;
+                for (int i = 1; i < index + 1; i++)
+                {
+                    currentNode = currentNode.Next;
+                }
+                newNode.Next = currentNode.Next;
+                currentNode.Next = newNode;
+                Console.WriteLine("{0} is inserted into the linkedlist", data);
+            }
+
+        }
+
         public void Display()
         {
             if (head == null)

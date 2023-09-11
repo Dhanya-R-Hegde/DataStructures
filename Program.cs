@@ -67,6 +67,14 @@
                 Console.WriteLine("The element is not found in the LinkedList");
             }
 
+            //UC8
+            LinkedList list8 = new LinkedList();
+            list8.AddNodeLast(56);
+            list8.AddNodeLast(30);
+            list8.AddNodeLast(70);
+            list8.InsertAfter(40, 30);
+            list8.Display();
+
         }
     }
 }
